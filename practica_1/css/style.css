@@ -55,19 +55,18 @@ figure p {
 
 .damaged_flashing {
     top: 20px;
-    left: 60px;
+    left: 8%;
 }
 
 .worn_sealant {
     top: 20px;
-    right: 60px;
+    right: 8%;
 }
 
 img {
     width: 100%;
     display: block;
-    transform: translateY(-10%)
-    
+    transform: translateY(-10%);
 }
 
 aside{
@@ -95,4 +94,59 @@ h4{
 aside article p {
     line-height: 2em;
     margin: 20px 0px;
+}
+
+@media(max-width: 1004px){
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    figure {
+        width: 30%;
+    }
+    aside{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    aside article {
+        height: 50%;
+        width: 40%;
+        padding: 10px;
+    }
+    header{
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media(max-width: 748px){
+    .back_top{
+        height: 30%;
+    }
+    aside{
+        margin-top: -50px;
+    }
+    figcaption {
+        margin-top: -20px;
+    }
+}
+
+@media(max-width: 425px){
+    .back_top{
+        height: 20%;
+    }
+    aside{
+        margin-top: -150px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside article {
+        margin-top: 35px;
+        width: 80%;
+    }
 }
